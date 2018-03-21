@@ -5,10 +5,10 @@
       <title>NYC Landmarks</title>
    </head>
    <body>
-      <h1>Registered landmarks in NYC</h1>
-      <% Landmark.all.each do |landmark| %>
+      <h1>Registered figures in NYC</h1>
+      <% Figure.all.each do |figure| %>
          <ul>
-            <li> <%=landmark.name%> - <%=landmark.year_completed%></li>
+            <li> <%=figure.name%> </li>
          </ul>
       <% end %>
    </body>

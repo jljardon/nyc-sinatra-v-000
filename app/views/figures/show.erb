@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>NYC Landmarks</title>
+   </head>
+   <body>
+      <h1>Figure info -
+         <%=@figure.name%></h1>
+      <h2>Figure titles</h2>
+      <%@figure.titles.each do |titles|%>
+         <ul>
+            <li><%=title.name%></li>
+         </ul>
+      <%end%>
+      <h2>Figure landmarks</h2>
+      <%@figure.landmarks.each do |landmark|%>
+         <ul>
+            <li><%=landmark.name%></li>
+         </ul>
+      <%end%>
+   </body>
+</html>
